@@ -6,6 +6,7 @@ body {
     display: grid;
     place-items: center;
     margin: 0;
+    cursor: default;
 }
 
 .card {
@@ -27,12 +28,12 @@ body {
     width: 100%;
     border: none;
     border-radius: 10px;
-    
+    position: relative;
 }
 
 .eye-icon {
     display: none;
-    
+    position: absolute;
 }
 
 .discription-div h1 {
@@ -86,5 +87,16 @@ hr {
     margin-right: 20px;
     border: 1px solid white;
     border-radius: 50%;
+}
+
+/* Hover Effects */
+
+.nft-img:hover {
+    cursor: pointer;
+}
+
+.discription-div h1:hover, .name:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
 
